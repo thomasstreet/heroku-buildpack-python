@@ -207,13 +207,6 @@ sub-env $BIN_DIR/steps/geo-libs
 # GDAL support.
 source $BIN_DIR/steps/gdal
 
-# Install dependencies with Pip.
-source $BIN_DIR/steps/pip-install
-
-# Django collectstatic support.
-sub-env $BIN_DIR/steps/collectstatic
-
-
 # Create .profile script for application runtime environment variables.
 set-env PATH '$HOME/.heroku/python/bin:$PATH'
 set-env PYTHONUNBUFFERED true
